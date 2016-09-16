@@ -6,21 +6,10 @@
 class CashFlowCalculator
 {
 private:
-	/// containter of cash payments
 	std::vector<double> cashPayments_;
-
-	/// container of time periods, aligned with payments
 	std::vector<int> timePeriods_;
-
-	/// simple interest rate
 	double rate_;
 
-	/** \brief Calculates the present value for a single payment
-	  *	\param futureValue is the value of the payment
-	  *	\param timePeriod is how many periods in the future
-	  *	\return present value of future payment
-	
-	  */
 	double presentValue(double futureValue, int timePeriod);
 
 public:
