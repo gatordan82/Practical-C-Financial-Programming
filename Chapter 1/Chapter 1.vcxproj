@@ -22,6 +22,7 @@
     <ProjectGuid>{6B595616-6432-4FD4-A38C-14B412510EB0}</ProjectGuid>
     <RootNamespace>PracticalCFinancialProgramming</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>Chapter 1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -81,7 +82,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -110,10 +115,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CashFlowCalculator.h" />
     <ClInclude Include="CompoundIntRateCalculator.h" />
     <ClInclude Include="IntRateCalculator.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CashFlowCalculator.cpp" />
     <ClCompile Include="CompoundIntRateCalculator.cpp" />
     <ClCompile Include="IntRateCalculator.cpp" />
     <ClCompile Include="Test.cpp" />
