@@ -1,6 +1,6 @@
 #include "IntRateCalculator.h"
 
-IntRateCalculator::IntRateCalculator() : rate_{ 0 }
+IntRateCalculator::IntRateCalculator() : rate_{ 0.0 }
 {
 }
 

@@ -110,10 +110,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CompoundIntRateCalculator.h" />
     <ClInclude Include="IntRateCalculator.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CompoundIntRateCalculator.cpp" />
     <ClCompile Include="IntRateCalculator.cpp" />
+    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
